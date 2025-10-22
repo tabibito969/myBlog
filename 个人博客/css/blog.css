@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'YourFontName';
+  src: url(../fonts/Galgo-Regular.woff2) format('woff2'),
+       url(../fonts/Galgo-Regular.woff) format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 初始化 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: YourFontName, sans-serif;
+    scroll-behavior: smooth;
+}
+/* 背景 */
+body{
+    background-color: rgb(237,237,239);
+    position: relative;
+}
+
+.nav{
+    background-color: rgb(250,250,250);
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 65px;
+    height: 56px;
+    position: fixed;
+    z-index: 100;
+}
+.zhanwei3{
+    width: 100%;
+    height: 56px;
+}
+.nav_left{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    flex: 3;
+    justify-content:space-around;
+    text-decoration: none;
+}
+.nav_left a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.nav_left a:checked{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+/* 图标加大 */
+.nav_left span{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+.logo{
+    font-size: 56px;
+    color: rgb(0, 0, 0);
+}
+.zhanwei{
+    flex: 2;
+    text-align: center;
+}
+.nav_right{
+    flex: 1;
+    text-align: right;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content:space-around;
+    position: relative;
+}
+.qq{
+    position: relative;
+    display: block;
+}
+
+.qq img{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 64px;
+    right: -84px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+.qq:hover img{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.wechat img{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 64px;
+    right: -84px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+.wechat:hover img{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.zhanwei2{
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+.zhanwei1{
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+/* 颜色 */
+/* 灰rgb(237,237,239)
+   白rgb(250,250,250)
+*/
+
+.main{
+    background-color: rgb(250,250,250);
+    width: 60%;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin: 100px 400px 50px 200px;
+    padding: 30px;
+}
+.ge1{
+    display: flex;
+    gap: 35px;
+    margin-bottom: 20px;
+}
+.ge2{
+    display: flex;
+    gap: 35px;
+}
+.main img{
+    display: block;
+    border-radius: 10px;
+}
+.main img:hover{
+    /* 阴影效果 */
+    box-shadow: 5px 5px 35px -10px rgb(161, 160, 160);
+    transition: all 0.1s ease-in-out;
+}
+/* 个人简介 */
+.personal_profile{
+    position: absolute;
+    background-color: rgb(250,250,250);
+    width: 230px;
+    height: 521px;
+    top: 180px;
+    right: 57px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.personal_profile img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 40px auto;
+}
+
+.personal_profile h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin:20px auto;
+    font-size: 35px;
+}
+.personal_profile p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin:10px 20px;
+    font-size: 25px;
+    line-height: 28px;
+}
+.footer{
+    background-color: rgb(54, 54, 54);
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 50px;
+    border-top: 2px solid rgb(40, 40, 40);
+}
+
+.main2{
+    background-color: rgb(250,250,250);
+    width: 80%;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin: 100px 400px 50px -150px;
+    padding: 30px;
+    padding-left: 180px;
+    position: relative;
+}
+.ge3{
+    display: flex;
+    gap: 35px;
+    margin-bottom: 20px;
+}
+.ge4{
+    display: flex;
+    gap: 35px;
+}
+.main2 img{
+    display: block;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+.jianjie1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    background-color: rgb(129, 129, 132);
+    color: black;
+    font-size: 16px;
+    line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.jianjie2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    background-color: rgb(129, 129, 132);
+    color: black;
+    font-size: 16px;
+    line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    border-radius: 10px;
+    padding: 10px;
+    left: 415px;
+}.jianjie3{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    background-color: rgb(129, 129, 132);
+    color: black;
+    font-size: 16px;
+    line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    border-radius: 10px;
+    padding: 10px;
+    left: 650px;
+}.jianjie4{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    background-color: rgb(159, 159, 161);
+    color: black;
+    font-size: 16px;
+    line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    border-radius: 10px;
+    padding: 10px;
+    left: 885px;
+}
+.jianjie1:hover,
+.jianjie2:hover,
+.jianjie3:hover,
+.jianjie4:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.zhanwei4{
+    height: 10px;
+}
+.main3{
+    width: 60%;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin: 50px 400px 50px 200px;
+    padding: 30px;
+    background-color: rgb(237,237,239);
+}
+.main3 p{
+    color: rgb(0, 0, 0);
+    font-size: 37px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.main4{
+    width: 60%;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin: 50px 400px 50px 200px;
+    padding: 30px;
+    background-color: rgb(250,250,250);
+}
+.main4 img{
+    display: block;
+    border-radius: 50%;
+    border: 30px solid rgb(30, 30, 30);
+    gap: 50px;
+}
