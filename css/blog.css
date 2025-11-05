@@ -32,6 +32,7 @@ body{
     height: 56px;
     position: fixed;
     z-index: 100;
+    opacity: 0.95;
 }
 .zhanwei3{
     width: 100%;
@@ -53,6 +54,11 @@ body{
 .nav_left a:checked{
     color: rgb(0, 0, 0);
     text-decoration: none;
+}
+.nav_left a:hover{
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: rgb(100, 100, 100);
 }
 /* 图标加大 */
 .nav_left span{
